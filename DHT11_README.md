@@ -10,4 +10,7 @@ Note to get timestamped temperature and humidity values out of the Arduino, use 
 On the logging tab, specify a directory and a file name - use a .csv file extention 
 After failing to connect, I searched and found that you have to run PuTTY as root! so do this command to open in linux:
 $ sudo putty
-Make sure you connect to the same USB port that the Arduino is connected to
+Make sure you connect to the same USB port that the Arduino is connected to as well.
+
+I noticed I don't have date/timestamp data in my serial data so that will have to be a future improvement. 
+Some of the output data gets garbled every few lines like it did not write correctly. I am not sure why, perhaps slowing the process will help. I have a few delays built in already and it writes data about every 5 seconds.
